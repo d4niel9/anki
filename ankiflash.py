@@ -4,23 +4,11 @@ import pathlib
 import shutil
 
 
-def text_input():
-    while True:
-        try:
-            text = input("Name file >>> ")
-            if(not(text and text.strip())):
-                raise ValueError("*Cannot enter an empty string")
-            return text
-        except:
-            print(ve)
-            continue
-
-
 def reader_words():
     try:
         words_front =[]
         words_back = []
-        with open(text_input(), "r", encoding="utf-8") as f:
+        with open("words.csv", "r", encoding="utf-8") as f: #write name csv
             read = csv.reader(f, delimiter=",")
             for row in read:
                 words_front.append(row[0])
