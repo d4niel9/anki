@@ -77,7 +77,7 @@ def main():
         *******************************************
         """
         print(instructions)
-        path_csv = str(input("Enter path name file csv: \n>>>"))
+        path_csv = str(input("Enter path name file csv: \n>>> "))
         csv_file = Anki(path_csv)
 
         option = int(input("Enter the option to download: \n>>> "))
