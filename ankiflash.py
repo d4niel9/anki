@@ -74,6 +74,7 @@ def main():
         [3] portuguese
         [4] italian
         [5] french
+        [6] ruso
         *******************************************
         """
         print(instructions)
@@ -109,6 +110,12 @@ def main():
         elif option == 5:
             lang = "fr"
             tld = "fr"
+            csv_file.audio_convert(lang,tld)
+            csv_file.csv_for_anki()
+            
+         elif option == 6:
+            lang = "ru"
+            tld = "ru"
             csv_file.audio_convert(lang,tld)
             csv_file.csv_for_anki()
         else:
