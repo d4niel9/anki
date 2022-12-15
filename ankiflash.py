@@ -113,7 +113,7 @@ def main():
             csv_file.audio_convert(lang,tld)
             csv_file.csv_for_anki()
             
-         elif option == 6:
+        elif option == 6:
             lang = "ru"
             tld = "ru"
             csv_file.audio_convert(lang,tld)
